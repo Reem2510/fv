@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/data"
+    tools:context=".Data.addstockfra">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Addbt"
+            android:layout_width="220dp"
+            android:layout_height="62dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/white"
+            android:hint="Add"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/backbt"
+            android:layout_width="104dp"
+            android:layout_height="69dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/white"
+            android:hint="back"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/named"
+            android:layout_width="289dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="396dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Stockname"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Symbold"
+            android:layout_width="285dp"
+            android:layout_height="51dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Symbol"
+            android:minHeight="48dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/valued"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/valued"
+            android:layout_width="289dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="value"
+            android:minHeight="48dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/named"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="211dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="60dp"
+            android:text="here you can add Stocks"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toTopOf="@+id/Symbold"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
